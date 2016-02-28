@@ -7,10 +7,53 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hungrie.myrestuarant.MainActivity">
+    tools:context="com.hungrie.myrestuarant.MainActivity"
+    android:background="@drawable/background">
 
-    <TextView
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="10dp"
+        android:background="#9cffffff"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_below="@+id/img_logo"
+        android:singleLine="true"
+        android:hint="User" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:background="#9cffffff"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:password="true"
+        android:layout_below="@+id/username"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp"
+        android:typeface="sans"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:onClick="clickLogin"
+        android:clickable="true" />
 </RelativeLayout>
