@@ -239,6 +239,9 @@ public class OrderActivity extends AppCompatActivity {
 
         } catch (Exception e) {
 
+
+            ///Log Error
+
             Log.d("Restaurant", "Error : AddMysql ===>" + e.toString());
 
         }
