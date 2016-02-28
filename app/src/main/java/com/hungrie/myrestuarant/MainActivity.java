@@ -231,6 +231,8 @@ public class MainActivity extends AppCompatActivity {
 
             } catch (Exception e) {
 
+                ///Commment Inputstream
+
                 Log.d("Restaurant", "Error From InputStream ==>" + e.toString());
             }// Try
 
